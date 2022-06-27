@@ -1,2 +1,2 @@
-# GTchal3-
+# GTchal3
 Password Generator
