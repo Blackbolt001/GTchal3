@@ -1,36 +1,24 @@
 
-var generateBtn = document.querySelector("#generate");
-
-
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
-}
 
 // Add event listener to generate button
 
 
-function Prompt() {
-  var max = 128;
-  var min= 8;
-
+function Generate() {
+ 
   var length = prompt("How many Characters? Please enter a number between 8 and 128 ")
-  alert("Your password will be " + length +" characters");Promt2()
+  alert("Your password will be " + length +" characters");
+  if (length < 8 && is > 128) alert("password must have between 8 and 128 character")
+  else 
+  CntGenerate()
 }
-
-function Promt2() {
-
+ function CntGenerate() {
   var UpperCase = confirm("Would you like to include Uppercase letters?")
   if (confirm == true) {
     alert("Password will include Uppercase");
     sessionStorage.setItem(Password1,UpperCase);
   }
   else 
-    alert("Password will not include Uppercase");
+    alert("Password will not include Uppercase")
   }
 
   var LowerCase = confirm("Would you like to include Lowercase Letters?");
@@ -57,3 +45,22 @@ if (confirm == true) {
 else {
   alert("Password will not include special Characters");
 }
+
+var i = Number
+
+for (let i =8; i < 128; i++) {
+  console.log(i);
+}
+
+for ( let i = 0; i < 26; i ++) {
+var Letter = (i + 0).toString(26);
+console.log(Letter)
+}
+for ( let i =0; i < 26; i++) {
+  var UpLetter = (i+0).toString(26).toUpperCase();
+  
+  console.log(UpLetter)
+}
+var special = [/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/]
+console.log(special)[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+
