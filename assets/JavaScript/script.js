@@ -1,7 +1,4 @@
 
-
-// Add event listener to generate button
-
 var button = document.getElementById('gen')
 button.addEventListener('click',Generate)
 
